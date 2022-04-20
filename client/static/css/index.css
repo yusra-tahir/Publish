@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Barlow+Condensed:ital,wght@0,200;0,400;1,100;1,700&family=Barlow+Semi+Condensed:ital,wght@1,100&family=Cormorant+Garamond:ital,wght@1,300&family=Hurricane&family=Merienda&family=Playfair+Display&family=Space+Mono:ital@1&display=swap');
+
+body {
+    margin-top: 6%;
+    text-align: center;
+    justify-content: center;
+    background-color: hsl(300, 12%, 76%);
+    font-family: 'Space Mono', monospace;
+}
+
+a {
+    position: absolute;
+    left: 1100px;
+}
+
+input {
+
+    border: none;
+    position: absolute;
+    display: flex;
+    left: 300px;
+
+}
+
+#name,
+#title,
+#content {
+    background: transparent;
+    resize: none;
+    border: 1px black solid none;
+    outline: none;
+    font-size: 20px;
+}
+
+#name {
+    font-size: 18px;
+}
+
+#content {
+    font-size: 20px;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.publish {
+    top: 70px;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+}
+
+.publish:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(212, 155, 197, 0.718);
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+}
+
+.publish button {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.publish svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.publish:hover:before {
+    width: 100%;
+    background: rgb(212, 155, 197);
+}
+
+.publish:hover svg {
+    transform: translateX(0);
+}
+
+.publish:active {
+    transform: scale(0.96);
+}
