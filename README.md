@@ -27,17 +27,18 @@ A place to write down your thoughts and remain anonymous whilst doing so!
 
 ## Changelog
 
-# docker-compose-yaml
+# controllers/posts.js
 
-[x] added password for postgres and the environment needed 
+[x] added `create function`
 
-# models/authors.js
+# models/posts.js
 
 [x] updated `get all()` function
+[x] added `create` function 
 
 ## Bugs
 
-[x] Unable to show the data on the database 
+[x] Unable to post and show in the browser
 
 ## Wins & Challenges
 
@@ -47,5 +48,5 @@ A place to write down your thoughts and remain anonymous whilst doing so!
 
 ### Challenges 
 
- - Connect the data from the tables in the database to the local host
+ - Send form data to database and show in the browser 
 
