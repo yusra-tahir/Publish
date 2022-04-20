@@ -2,8 +2,7 @@
 
 A full stack web application with an HTML/CSS/JS client and an Express server connected to a PostgreSQL database.
 
-A place to write down your thoughts and remain anonymous whilst doing so!
-
+A place to write down your thoughts and remain anonymous whilst doing so! Making a telegra.ph clone with [Diren](https://github.com/Dnayir)
 
 ## Installation
 
