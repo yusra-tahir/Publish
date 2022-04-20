@@ -46,7 +46,7 @@ A place to write down your thoughts and remain anonymous whilst doing so!
 
 - Managed to get the server running and update the docker-compose file 
 
-### Challenges 
+### Challenges 
 
  - Send form data to database and show in the browser 
 
