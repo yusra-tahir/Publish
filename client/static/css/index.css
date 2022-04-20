@@ -22,17 +22,17 @@ input {
 
 }
 
-#name,
+#writer,
 #title,
 #content {
+    width: 50%;
     background: transparent;
-    resize: none;
-    border: 1px black solid none;
+    border: none;
     outline: none;
     font-size: 20px;
 }
 
-#name {
+#writer {
     font-size: 18px;
 }
 

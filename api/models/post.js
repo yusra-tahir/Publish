@@ -40,9 +40,8 @@ module.exports = class Post {
     return new Promise(async (resolve, reject) => {
       try {
         const { title, writer, content } = postData;
-        let result = await db.query(
-          `INSERT INTO posts (title, writer, content) VALUES ($1, $2, $3) RETURNING *;`,
-          [title, writer, content]
+        let result = await db.query(`INSERT INTO posts (title, writer, content) VALUES ($1, $2, $3) RETURNING *;`,
+          [id, title, writer, content]
         );
         resolve(result.rows[0]);
       } catch (err) {
