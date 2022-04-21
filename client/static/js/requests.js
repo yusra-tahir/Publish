@@ -27,7 +27,7 @@ async function publishPost(e) {
     if (err) {
       throw Error(err);
     } else {
-      form.innerHTML = "";
+      form.textContent = "";
       window.location = `#posts/${id}`;
       let titleOutput = document.createElement("h2");
       titleOutput.textContent = title;
