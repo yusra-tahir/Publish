@@ -1,14 +1,13 @@
-const express = require("express");
-const app = express();
-const cors = require("cors");
+const express = require('express');
+const cors = require('cors');
 
-app.use(cors("*"));
-app.use(express.json());
+const server = express();
+server.use(cors());
+server.use(express.json());
 
-const postRoutes = require("./controllers/posts");
+const postRoutes = require('./routes/posts')
+const { rmSync } = require('fs')
+server.use('/posts', postRoutes)
+server.get('/', (req, res) => res.send("Welcome to Publish - telegra.ph clone"))
 
-app.use("/posts", postRoutes);
-
-app.get("/", (req, res) => res.json("Welcome"));
-
-module.exports = app;
+module.exports = server;
