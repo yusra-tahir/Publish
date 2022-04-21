@@ -20,11 +20,7 @@ async function show(req, res) {
 
 async function create(req, res) {
   try {
-    const post = await Post.create(
-      req.body.title,
-      req.body.writer,
-      req.body.content
-    );
+    const post = await Post.create(req.body);
     res.status(201).json(post);
   } catch (err) {
     res.status(422).json({ err });

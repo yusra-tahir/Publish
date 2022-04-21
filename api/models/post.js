@@ -38,15 +38,14 @@ module.exports = class Post {
 
   static async create(postData) {
     return new Promise(async (resolve, reject) => {
-      try {
-        const { title, writer, content } = postData;
-        let result = await db.query(`INSERT INTO posts (title, writer, content) VALUES ($1, $2, $3) RETURNING *;`,
-          [id, title, writer, content]
-        );
-        resolve(result.rows[0]);
-      } catch (err) {
-        reject("Post could not be created");
-      }
+        try {
+            const { title, writer, content} = postData;
+            let result = await db.query(`INSERT INTO posts (title, writer, content) VALUES ($1, $2, $3) RETURNING *;`, [ title, writer, content]);
+            resolve (result.rows[0]);
+        } catch (err) {
+            reject('Post could not be created');
+        }
     });
-  }
+};
+
 };

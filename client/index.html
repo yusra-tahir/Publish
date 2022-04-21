@@ -13,14 +13,14 @@
 
     <form class="main-section">
 
-        <input type="text" id="title" placeholder="Title"> </br> </br>
+        <input name="title" type="text" id="title" placeholder="Title"> </br> </br>
 
-        <input type="text" id="writer" placeholder="Name"> </br> </br>
+        <input name="writer" type="text" id="writer" placeholder="Name"> </br> </br>
 
-        <input type="text" id="content" placeholder="Tell your story..."> </br> </br>
+        <input name="content" type="text" id="content" placeholder="Tell your story..."> </br> </br>
 
         <a class="publish">
-            <button> Publish </button>
+            <button type="submit" id="button"> PUBLISH </button>
             <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>
                 <polyline points="8 1 12 5 8 9"></polyline>
@@ -28,5 +28,7 @@
         </a>
 
     </form>
+
+    <section id="post"> </section>
     <script src='static/js/requests.js'></script>
 </body>
